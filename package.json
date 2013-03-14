@@ -13,7 +13,7 @@
   "dependencies": {
     "in-groups-of": "0.0.1",
     "range": "0.0.1",
-    "domify": "~0.1.0",
+    "domify": "0.0.3",
     "class-list": "0.0.1",
     "jquery-browserify": "~1.8.1"
   },

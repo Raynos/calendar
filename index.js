@@ -13,7 +13,9 @@ var domify = require('domify')
  * Expose `Calendar`.
  */
 
-module.exports = Calendar;
+module.exports = function (date) {
+  return new Calendar(date)
+};
 
 /**
  * Initialize a new `Calendar`
@@ -33,7 +35,7 @@ module.exports = Calendar;
 function Calendar(date) {
   Emitter.call(this);
   var self = this;
-  this.el = domify('<div class=calendar></div>')[0];
+  this.el = domify('<div class=calendar></div>');
   this.days = new Days;
   this.el.appendChild(this.days.el[0]);
   this.on('change', this.show.bind(this));
