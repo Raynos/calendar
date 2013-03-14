@@ -6,16 +6,18 @@
 
   ![javascript calendar component](http://f.cl.ly/items/2u3w1D421W0C370Z3G1U/Screen%20Shot%202012-10-11%20at%2014.32.41.png)
 
+  Ported from [`component/calendar`][1] to a proper npm module
+
 ## Installation
 
-    $ component install component/calendar
+    $ npm i raynos-calendar
 
 ## Example
 
 ```js
-var Calendar = require('calendar');
-var cal = new Calendar;
-cal.el.appendTo('body');
+var Calendar = require('raynos-calendar')
+var cal = new Calendar
+cal.el // =>
 ```
 
 ## Events
@@ -66,3 +68,4 @@ cal.el.appendTo('body');
 
   MIT
 
+  [1]: https://github.com/component/calendar

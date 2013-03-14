@@ -1,22 +1,26 @@
 {
-  "name": "calendar-component",
+  "name": "raynos-calendar",
   "description": "Calendar component",
-  "version": "0.0.3",
-  "keywords": ["calendar", "date", "ui"],
+  "version": "0.1.0",
+  "keywords": [
+    "calendar",
+    "date",
+    "ui"
+  ],
+  "repository": "git://github.com/Raynos/calendar.git",
+  "main": "index",
+  "homepage": "https://github.com/Raynos/calendar",
   "dependencies": {
-    "domify-component": "*",
-    "emitter-component": "*",
-    "in-groups-of": "*",
-    "classes-component": "*"
+    "in-groups-of": "0.0.1",
+    "range": "0.0.1",
+    "domify": "~0.1.0",
+    "class-list": "0.0.1",
+    "jquery-browserify": "~1.8.1"
   },
-  "component": {
-    "styles": ["lib/calendar.css"],
-    "scripts": {
-      "calendar/index.js": "index.js",
-      "calendar/lib/utils.js": "lib/utils.js",
-      "calendar/lib/template.js": "lib/template.js",
-      "calendar/lib/calendar.js": "lib/calendar.js",
-      "calendar/lib/days.js": "lib/days.js"
-    }
+  "devDependencies": {
+    "tryme": "git://github.com/Raynos/tryme",
+  },
+  "scripts": {
+    "tryme": "tryme ./examples --live"
   }
 }
