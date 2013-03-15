@@ -55,6 +55,10 @@ function Calendar(date) {
 
 util.inherits(Calendar, Emitter)
 
+Calendar.prototype.value = function () {
+  return this.days.selected
+}
+
 /**
  * Add class `name` to differentiate this
  * specific calendar for styling purposes,
