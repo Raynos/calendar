@@ -32,6 +32,10 @@ cal.el // =>
   Initialize a new `Calendar` with the given `date` shown,
   defaulting to now.
 
+### Calendar#value()
+
+  Returns the current date value in the calendar
+
 ### Calendar#select(date)
 
   Select the given `date` (`Date` object).
